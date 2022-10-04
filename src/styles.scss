@@ -1,0 +1,16 @@
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 48px;
+
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: #6b7176;
+}
+
+app-root {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
