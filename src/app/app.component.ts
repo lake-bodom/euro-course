@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {EuroCourseService} from './servises/euro-course.service';
+import {GetEuroCourseService} from './servises/get-euro-course.service';
 import {Observable} from 'rxjs';
 
 @Component({
@@ -9,10 +9,10 @@ import {Observable} from 'rxjs';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-  public euroCourse$: Observable<number> = this._euroCourseService.checkEuroCourse();
+  public euroCourse$: Observable<number> = this._getEuroCourseService.checkEuroCourse();
 
   constructor(
-    private _euroCourseService: EuroCourseService,
+    private _getEuroCourseService: GetEuroCourseService,
   ) {
   }
 }
